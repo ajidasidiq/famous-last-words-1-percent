@@ -35,7 +35,8 @@ def main() -> int:
     if written != ENTRY:
         raise ValueError("written entry does not match the entry text")
     gate(written)
-    print(f"wrote {len(ENTRY)} chars to {OUTPUT_PATH}")
+    print(f"wrote {len(ENTRY)} chars to {OUTPUT_PATH}:")
+    print(ENTRY)
     return 0
 
 
